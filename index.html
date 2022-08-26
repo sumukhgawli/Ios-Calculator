@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sumukh Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body onload="disapear()">
+    <div id="loader"></div>
+    <div class="iphone" id="iphone_m">
+        <div class="screen">
+            <div class="fullbar">
+                <div class="battery" style="float: right; padding-right: 5px;">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="25" height="15" viewBox="0 0 172 172"
+                        style=" fill:#000000;">
+                        <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                            stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                            font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                            style="mix-blend-mode: normal">
+                            <path d="M0,172.00002v-172.00002h172.00002v172.00002z" fill="none"></path>
+                            <g fill="#ffffff">
+                                <path
+                                    d="M22.93333,40.13333c-9.43116,0 -17.2,7.76884 -17.2,17.2v51.6c0,9.43116 7.76884,17.2 17.2,17.2h114.66667c9.43116,0 17.2,-7.76884 17.2,-17.2v-51.6c0,-9.43116 -7.76884,-17.2 -17.2,-17.2zM22.93333,51.6h114.66667c3.23951,0 5.73333,2.49383 5.73333,5.73333v51.6c0,3.23951 -2.49383,5.73333 -5.73333,5.73333h-114.66667c-3.23951,0 -5.73333,-2.49383 -5.73333,-5.73333v-51.6c0,-3.23951 2.49383,-5.73333 5.73333,-5.73333zM28.66667,63.06667v40.13333h51.6v-40.13333zM160.53333,68.8v28.66667h5.73333c3.1648,0 5.73333,-2.56853 5.73333,-5.73333v-17.2c0,-3.1648 -2.56853,-5.73333 -5.73333,-5.73333z">
+                                </path>
+                            </g>
+                        </g>
+                    </svg>
+                </div>
+                <div class="wifi" style="float: right;">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="15" height="15" viewBox="0 0 172 172"
+                        style=" fill:#000000;">
+                        <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                            stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                            font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                            style="mix-blend-mode: normal">
+                            <path d="M0,172.00002v-172.00002h172.00002v172.00002z" fill="none"></path>
+                            <g fill="#ffffff">
+                                <path
+                                    d="M85.32113,57.42432c-20.01655,0 -40.02832,7.61734 -55.26872,22.85775c-1.40414,1.34815 -1.96975,3.35005 -1.4787,5.23366c0.49105,1.88361 1.96202,3.35458 3.84563,3.84563c1.88361,0.49105 3.88551,-0.07457 5.23366,-1.4787c26.37237,-26.37237 68.9709,-26.37237 95.34326,0c1.34815,1.40412 3.35005,1.96971 5.23364,1.47866c1.88359,-0.49105 3.35456,-1.96202 3.84561,-3.84561c0.49105,-1.88359 -0.07455,-3.88549 -1.47866,-5.23364c-15.2404,-15.2404 -35.25917,-22.85775 -55.27572,-22.85775zM85.32113,89.38037c-11.83755,0 -23.67682,4.50039 -32.67692,13.50049c-2.09884,2.10078 -2.09728,5.50524 0.0035,7.60408c2.10078,2.09884 5.50524,2.09728 7.60408,-0.0035c13.89146,-13.89146 36.25421,-13.89146 50.14567,0c1.34814,1.40414 3.35005,1.96976 5.23366,1.47871c1.88361,-0.49105 3.35459,-1.96202 3.84564,-3.84563c0.49105,-1.88361 -0.07457,-3.88552 -1.47871,-5.23366c-9.0001,-9.0001 -20.83937,-13.50049 -32.67692,-13.50049zM86,121.83333c-7.91608,0 -14.33333,6.41725 -14.33333,14.33333c0,7.91608 6.41725,14.33333 14.33333,14.33333c7.91608,0 14.33333,-6.41725 14.33333,-14.33333c0,-7.91608 -6.41725,-14.33333 -14.33333,-14.33333z">
+                                </path>
+                            </g>
+                        </g>
+                    </svg>
+                </div>
+                <div class="signal" style="float: right; padding-right: 3px;">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="10" height="15" viewBox="0 0 172 172"
+                        style=" fill:#000000;">
+                        <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                            stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                            font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                            style="mix-blend-mode: normal">
+                            <path d="M0,172.00002v-172.00002h172.00002v172.00002z" fill="none"></path>
+                            <g fill="#ffffff">
+                                <path
+                                    d="M130.72,6.88v158.24h34.4v-158.24zM89.44,44.72v120.4h34.4v-120.4zM48.16,82.56v82.56h34.4v-82.56zM6.88,120.4v44.72h34.4v-44.72z">
+                                </path>
+                            </g>
+                        </g>
+                    </svg>
+                </div>
+                <div id="js_time"></div>
+            </div>
+            <div class="cal_main">
+        <input type="text" name="screen" id="cal_screen">
+        <table>
+            <tr>
+                <td><button class="grey_btn">C</button></td>
+                <td><button class="grey_btn">(</button></td>
+                <td><button class="grey_btn">)</button></td>
+                <td><button class="yel_btn">÷</button></td>
+            </tr>
+            <tr>
+                <td><button>7</button></td>
+                <td><button>8</button></td>
+                <td><button>9</button></td>
+                <td><button class="yel_btn">X</button></td>
+            </tr>
+            <tr>
+                <td><button>4</button></td>
+                <td><button>5</button></td>
+                <td><button>6</button></td>
+                <td><button class="yel_btn">-</button></td>
+            </tr>
+            <tr>
+                <td><button>1</button></td>
+                <td><button>2</button></td>
+                <td><button>3</button></td>
+                <td><button class="yel_btn">+</button></td>
+            </tr>
+            <tr>
+                <td colspan="2"><button  style="width: 110px; border-radius: 60px;">0</button></td>
+                <td><button>.</button></td>
+                <td><button class="yel_btn">=</button></td>
+            </tr>
+            
+            
+        </table>
+            </div>
+        </div>
+    </div>    
+    
+</body>
+<script src="script1.js"></script>
+</html>
